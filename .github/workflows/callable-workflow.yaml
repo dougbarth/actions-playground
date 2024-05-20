@@ -5,4 +5,4 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - run: hello from callable-workflow
+      - run: echo hello from callable-workflow
