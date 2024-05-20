@@ -22,5 +22,5 @@ jobs:
     steps:
       - uses: jenseng/dynamic-uses@v1
         with:
-        # now you can use expressions 🥳
-        uses: ${{ inputs.workflow_name }}
+            # now you can use expressions 🥳
+            uses: ${{ inputs.workflow_name }}
