@@ -20,6 +20,7 @@ jobs:
   dynamic-call:
     runs-on: ubuntu-latest
     steps:
+      - uses: action/checkout@v4
       - uses: jenseng/dynamic-uses@v1
         with:
             # now you can use expressions 🥳
