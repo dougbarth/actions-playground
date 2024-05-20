@@ -12,3 +12,6 @@ jobs:
     
   call:
     uses:  ./.github/workflows/callable-workflow.yaml
+  
+  dynamic-call:
+    uses: ${{ inputs.workflow_name }}
