@@ -13,5 +13,14 @@ jobs:
   call:
     uses:  ./.github/workflows/callable-workflow.yaml
   
+  # This fails validation
+  #dynamic-call:
+  #  uses: ${{ inputs.workflow_name }}
+
   dynamic-call:
-    uses: ${{ inputs.workflow_name }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: jenseng/dynamic-uses@v1
+        with:
+        # now you can use expressions 🥳
+        uses: ${{ inputs.workflow_name }}
