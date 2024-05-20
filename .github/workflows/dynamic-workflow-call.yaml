@@ -22,6 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: jenseng/dynamic-uses@v1
+        name: Running ${{ inputs.workflow_name }}
         with:
             # now you can use expressions 🥳
             uses: ${{ inputs.workflow_name }}
