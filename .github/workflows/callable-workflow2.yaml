@@ -1,0 +1,7 @@
+on:
+  workflow_call:
+
+jobs:
+  run:
+    steps:
+      - run: hello from callable-workflow2
